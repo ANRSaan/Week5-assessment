@@ -17,7 +17,6 @@ function handleSubmit(e) {
         rating: +userRating, 
         countryId: +countrySelect.value
     }
-    console.log(body)
 
     axios.post('http://localhost:4004/cities', body)
         .then(() => {
